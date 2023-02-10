@@ -1,0 +1,76 @@
+{
+    "Search": [
+    {
+    "Title": "Resident Evil",
+    "Year": "2002",
+    "imdbID": "tt0120804",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BZmI1ZGRhNDYtOGVjZC00MmUyLThlNTktMTQyZGE3MzE1ZTdlXkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_SX300.jpg"
+    },
+    {
+    "Title": "The Evil Dead",
+    "Year": "1981",
+    "imdbID": "tt0083907",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BODc2MmVjZmUtNjAzMS00MDNiLWIyM2YtOGEzMjg0YjRhMzRmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    },
+    {
+    "Title": "Resident Evil: Apocalypse",
+    "Year": "2004",
+    "imdbID": "tt0318627",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMTc1NTUxMzk0Nl5BMl5BanBnXkFtZTcwNDQ1MDIzMw@@._V1_SX300.jpg"
+    },
+    {
+    "Title": "Resident Evil: Extinction",
+    "Year": "2007",
+    "imdbID": "tt0432021",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BNDQ0MWI3MmEtMzM0OC00Y2ViLWE4MDItMzNhNmY1ZTdjMWE2XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    },
+    {
+    "Title": "Tucker and Dale vs Evil",
+    "Year": "2010",
+    "imdbID": "tt1465522",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BODQ5NDQ0MjkwMF5BMl5BanBnXkFtZTcwNDg1OTU4NQ@@._V1_SX300.jpg"
+    },
+    {
+    "Title": "Evil Dead",
+    "Year": "2013",
+    "imdbID": "tt1288558",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BYzk2ZTVhOWMtMWQxYS00OWQzLWFmY2QtODQ4NGFmNGQxZWVmXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg"
+    },
+    {
+    "Title": "Resident Evil: Afterlife",
+    "Year": "2010",
+    "imdbID": "tt1220634",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BZjRlMGQ0NmUtM2U2Ny00MTk3LTg5NjAtN2M3Y2JmZjllNjJlXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg"
+    },
+    {
+    "Title": "Evil Dead II",
+    "Year": "1987",
+    "imdbID": "tt0092991",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMWY3ODZlOGMtNzJmOS00ZTNjLWI3ZWEtZTJhZTk5NDZjYWRjXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
+    },
+    {
+    "Title": "Resident Evil: Retribution",
+    "Year": "2012",
+    "imdbID": "tt1855325",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BYmY0NjcwMWMtN2MyNC00ZmZjLWEwZTAtM2ExYWE1NDUwNWQyXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
+    },
+    {
+    "Title": "Maleficent: Mistress of Evil",
+    "Year": "2019",
+    "imdbID": "tt4777008",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BZjJiYTExOTAtNWU0Yi00NzJjLTkwOTgtOTU2NWM1ZjJmYWVhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg"
+    }
+    ],
+    "totalResults": "1640",
+    "Response": "True"
+    }
