@@ -1,15 +1,39 @@
-.page{
+.page {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-form{
+
+form {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-main{
+
+main {
     display: flex;
     justify-content: center;
+    width: 100%;
+}
+
+.movies {
+    width: 100%;
+    max-width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+}
+
+.movies>li {
+    list-style: none;
+}
+
+.movies img {
+    width: 100%;
+    border-radius: 0.5rem;
+    height: 300px;
 }
