@@ -33,7 +33,7 @@ function useSearch(){
 
 function App() {
   const {search,updateSeacrch,error}=useSearch();
-  const {movies: mappedMovies,getMovies}=useMovies({search});
+  const {movies: mappedMovies,loading,getMovies}=useMovies({search});
 
 
   const handleSubmit=(event)=>{
@@ -57,7 +57,12 @@ function App() {
         <p style={{color: 'red'}}>{error}</p>
       </header>
       <main>
-        <Movies movies={mappedMovies} />
+        {
+          loading 
+            ? <p>Cargando...</p>
+            :
+            <Movies movies={mappedMovies} />
+        }
       </main>
 
     </div>
