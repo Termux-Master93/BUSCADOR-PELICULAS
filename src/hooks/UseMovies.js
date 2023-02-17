@@ -1,27 +1,26 @@
-import { useState } from 'react';
-import withoudResults from '../mocks/no-results.json'
-export function useMovies({search}) {
-    const [responseMovies,setResponseMovies]=useState([])
-    const movies = responseMovies.Search;
-    const mappedMovies = movies?.map(movie =>( {
-        id: movie.imdbID,
-        title: movie.Title,
-        year: movie.Year,
-        poster: movie.Poster
-    }))
+import { useState, useRef } from 'react';
+import { searchMovies } from '../services/movies';
+export function useMovies({ search }) {
+    const previeAsSerch = useRef(search) //la ostia pe
+    const [movies, setMovies] = useState([])
+    const [loading, setLoading] = useState(false)
+    const [error, setError] = useState(null)
 
-    const getMovies=()=>{
-        if(search){
-            fetch(` http://www.omdbapi.com/?i=tt3896198&apikey=74448a73&s=${search}`)
-            .then(res=>res.json())
-            .then(json=>{
-                setResponseMovies(json)
+    const getMovies = async () => {
+        if (search === previeAsSerch.current) return
 
-            })
-        }else{
-            setResponseMovies(withoudResults)
+        try {
+            setLoading(true)
+            setError(null)
+            previeAsSerch.current=search //checamos la llamada
+            const newMovies = await searchMovies({ search })
+            setMovies(newMovies)
+        } catch (error) {
+            setError(error.message)
+        } finally {
+            setLoading(false)
         }
 
     }
-    return { movies: mappedMovies,getMovies }
+    return { movies, getMovies, loading }
 }
