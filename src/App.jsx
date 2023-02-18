@@ -32,9 +32,14 @@ function useSearch(){
 }
 
 function App() {
+  const [sort,setSort]=useState(false)
   const {search,updateSeacrch,error}=useSearch();
-  const {movies: mappedMovies,loading,getMovies}=useMovies({search});
+  const {movies: mappedMovies,loading,getMovies}=useMovies({search,sort});
 
+  //Ordenar las peliculas
+  const handleSort=()=>{
+    setSort(!sort) //change the status
+  } 
 
   const handleSubmit=(event)=>{
     event.preventDefault()
@@ -52,6 +57,7 @@ function App() {
       <header>
         <form onSubmit={handleSubmit}>
           <input style={{border: '2px solid transparent', borderColor: error ? 'red': 'transparent' }} value={search} onChange={handleChanged} type={'text'} placeholder="searchs" />
+          <input  type={'checkbox'} onChange={handleSort} checked={sort}/>
           <button type='submit'>Search</button>
         </form>
         <p style={{color: 'red'}}>{error}</p>
