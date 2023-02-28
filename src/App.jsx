@@ -1,6 +1,7 @@
 
 import './App.css'
-import { useRef } from 'react'
+import { useCallback, useRef } from 'react'
+import debounce from 'just-debounce-it'
 import { useState,useEffect } from 'react'
 import { Movies } from './componets/Movies'
 import { useMovies } from './hooks/UseMovies'
@@ -40,14 +41,22 @@ function App() {
   const handleSort=()=>{
     setSort(!sort) //change the status
   } 
-
+const debounceGetMovies=useCallback(
+  debounce(search=>{
+    console.log('seacrh',search)
+    getMovies({search})
+  },300)
+  ,[getMovies]
+)
   const handleSubmit=(event)=>{
     event.preventDefault()
-    getMovies()
+    getMovies({search})
   }
   const handleChanged=(event)=>{
     event.preventDefault();
+    const newSearch=event.target.value;
     updateSeacrch(event.target.value)
+    debounceGetMovies(newSearch)
    
   }
  
